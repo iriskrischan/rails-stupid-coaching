@@ -1,0 +1,24 @@
+
+<html>
+  <head>
+    <title>First Stupid Coach</title>
+  </head>
+
+  <body>
+    <h2>First Stupid Coach</h2>
+    <form action="/answer" data-turbo="false" class="row g-3">
+      <div class="input-group mb-3">
+        <input type="text" name="input" value="<%= params[:input] %>"
+          class="col-2 form-control" placeholder="Ask the coach."
+          aria-label="Ask the coach" aria-describedby="button-addon2">
+        <div class="col-2 input-group-append">
+          <button input type="submit" value="Ask!"
+            class="btn btn-outline-secondary" type="button" id="button-addon2">
+            Here we Go!</button>
+        </div>
+      </form>
+    </div>
+
+  <%= yield %>
+  </body>
+</html>

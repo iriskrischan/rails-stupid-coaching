@@ -1,0 +1,17 @@
+
+<%# <%= link_to "Stupid Coach", answer_path %>
+
+
+<html>
+  <head>
+    <title>First Stupid Coach</title>
+  </head>
+
+  <body>
+    <%# <%= yield %>
+    <h2>First Stupid Coach</h2>
+    <p>Your Question is: <%= @input%></p>
+    <p><%= @answer%></p>
+    <%= link_to "Ask me another question?", ask_path %>
+  </body>
+</html>
